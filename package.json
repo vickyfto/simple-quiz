@@ -10,7 +10,10 @@
   "dependencies": {
     "bootstrap": "4.3.1",
     "bootstrap-vue": "2.0.0-rc.13",
-    "lodash": "4.17.11",
+    "gem": "^2.4.3",
+    "install": "^0.13.0",
+    "lodash": "^4.17.15",
+    "travis": "^0.1.1",
     "vue": "^2.5.22"
   },
   "devDependencies": {

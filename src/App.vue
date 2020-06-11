@@ -7,7 +7,7 @@
 
     <b-container class="bv-example-row">
       <b-row>
-        <b-col sm="6" offset="3">
+        <b-col container-fluid>
           <QuestionBox
             v-if="questions.length"
             :currentQuestion="questions[index]"
@@ -50,7 +50,7 @@ export default {
     }
   },
   mounted: function() {
-    fetch('https://opentdb.com/api.php?amount=10&category=27&type=multiple', {
+    fetch('https://opentdb.com/api.php?amount=50&category=18&type=multiple', {
       method: 'get'
     })
       .then((response) => {
@@ -71,5 +71,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(189, 221, 231);
+  }
 }
 </style>
